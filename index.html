@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Global Ledger | Indonesia’s ‘Jaw Killer’</title>
+    <meta
+      name="description"
+      content="Indonesia’s ‘Jaw Killer’: Is a Secret Military-Backed Experiment Coming Back to Haunt the State?"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #111827; /* slate-900 */
+        --muted: #6b7280; /* gray-500 */
+        --muted2: #9ca3af; /* gray-400 */
+        --line: #e5e7eb; /* gray-200 */
+        --panel: #f9fafb; /* gray-50 */
+        --panel2: #f3f4f6; /* gray-100 */
+
+        --red: #cc0000; /* newsroom red */
+        --blue: #0b5ed7; /* strong blue */
+
+        --sans:
+          "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+          Arial, sans-serif;
+        --serif: "Source Serif 4", ui-serif, Georgia, serif;
+
+        --radius: 14px;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--sans);
+        line-height: 1.65;
+      }
+
+      a {
+        color: inherit;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        width: min(1180px, 92vw);
+        margin: 0 auto;
+      }
+
+      /* Top header */
+      .top {
+        border-bottom: 1px solid var(--line);
+        background: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+      .top-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 14px 0;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 240px;
+      }
+      .logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, var(--red), var(--blue));
+      }
+      .brand .name {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.05;
+      }
+      .brand .name strong {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+      .brand .name span {
+        font-size: 11px;
+        color: var(--muted);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .nav {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+      .nav a {
+        font-size: 13px;
+        color: #111827;
+        text-decoration: none;
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+      }
+      .nav a:hover {
+        border-color: var(--line);
+        background: var(--panel);
+      }
+      .nav a.active {
+        border-color: #ffd0d0;
+        background: #fff5f5;
+        color: #8b0000;
+      }
+
+      .tools {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 240px;
+        justify-content: flex-end;
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #fff;
+        width: 220px;
+      }
+      .search input {
+        border: 0;
+        outline: 0;
+        width: 100%;
+        font-size: 13px;
+        font-family: var(--sans);
+      }
+      .btn {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 10px 12px;
+        border-radius: 999px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .btn.primary {
+        border-color: rgba(204, 0, 0, 0.25);
+        background: linear-gradient(
+          135deg,
+          rgba(204, 0, 0, 0.12),
+          rgba(11, 94, 215, 0.1)
+        );
+        font-weight: 700;
+      }
+
+      /* Breaking strip */
+      .breaking {
+        border-bottom: 1px solid var(--line);
+        background: #fff;
+      }
+      .breaking-inner {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 0;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .breaking .label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--red);
+        color: #fff;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 11px;
+      }
+      .breaking .chips {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .chip {
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        color: #374151;
+        font-size: 12px;
+      }
+      .chip.blue {
+        border-color: rgba(11, 94, 215, 0.2);
+        background: rgba(11, 94, 215, 0.06);
+      }
+      .chip.red {
+        border-color: rgba(204, 0, 0, 0.2);
+        background: rgba(204, 0, 0, 0.06);
+      }
+
+      /* Main grid */
+      main {
+        padding: 22px 0 60px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.65fr 0.85fr;
+        gap: 26px;
+        align-items: start;
+      }
+
+      /* Article card (clean, not too “cardy”) */
+      .article {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .article-head {
+        padding: 18px 22px 0;
+      }
+      .kicker {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .kicker .tag {
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #111827;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: var(--panel);
+      }
+      .kicker .tag.red {
+        border-color: rgba(204, 0, 0, 0.22);
+        background: rgba(204, 0, 0, 0.06);
+        color: #8b0000;
+      }
+      .kicker .tag.blue {
+        border-color: rgba(11, 94, 215, 0.22);
+        background: rgba(11, 94, 215, 0.06);
+        color: #0b3a8a;
+      }
+
+      h1 {
+        font-family: var(--serif);
+        font-weight: 600;
+        font-size: clamp(28px, 3.2vw, 42px);
+        line-height: 1.08;
+        margin: 10px 0 12px;
+        letter-spacing: 0.01em;
+      }
+      .dek {
+        font-size: 16px;
+        color: #374151;
+        margin: 0 0 14px;
+        max-width: 70ch;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        padding: 0 22px 16px;
+        color: var(--muted);
+        font-size: 13px;
+        border-bottom: 1px solid var(--line);
+      }
+      .meta strong {
+        color: #111827;
+        font-weight: 700;
+      }
+
+      .body {
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        gap: 18px;
+        padding: 18px 22px 24px;
+      }
+
+      /* Share rail */
+      .share {
+        position: sticky;
+        top: 108px;
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .share button {
+        width: 100%;
+        border: 1px solid var(--line);
+        background: #fff;
+        border-radius: 12px;
+        padding: 10px 10px;
+        cursor: pointer;
+        font-size: 12px;
+        text-align: left;
+      }
+      .share button:hover {
+        background: var(--panel);
+      }
+      .share small {
+        color: var(--muted2);
+        line-height: 1.35;
+      }
+
+      /* Typography */
+      article {
+        min-width: 0;
+      }
+      article p {
+        margin: 0 0 14px;
+        color: #111827;
+        font-size: 16px;
+      }
+      article h2 {
+        margin: 22px 0 10px;
+        font-size: 18px;
+        color: #111827;
+      }
+
+      .quote {
+        border-left: 4px solid var(--blue);
+        background: linear-gradient(
+          90deg,
+          rgba(11, 94, 215, 0.06),
+          transparent
+        );
+        padding: 14px 14px;
+        border-radius: 12px;
+        margin: 18px 0;
+      }
+      .quote .q {
+        font-family: var(--serif);
+        font-size: 18px;
+        line-height: 1.28;
+        margin: 0 0 8px;
+      }
+      .quote .by {
+        margin: 0;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .box {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px 14px;
+        margin: 14px 0 18px;
+      }
+      .box ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      .box li {
+        margin: 8px 0;
+      }
+
+      .rule {
+        height: 1px;
+        background: var(--line);
+        margin: 18px 0;
+      }
+
+      .unknown {
+        border: 1px solid rgba(204, 0, 0, 0.18);
+        background: rgba(204, 0, 0, 0.04);
+        border-radius: 12px;
+        padding: 14px 14px;
+        margin-top: 18px;
+      }
+      .unknown h3 {
+        margin: 0 0 10px;
+        font-size: 12px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #8b0000;
+      }
+      .unknown ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      /* Sidebar */
+      .side {
+        position: sticky;
+        top: 108px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: #fff;
+        overflow: hidden;
+      }
+      .panel .head {
+        padding: 14px 14px;
+        background: var(--panel);
+        border-bottom: 1px solid var(--line);
+        font-size: 12px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #374151;
+        font-weight: 800;
+      }
+      .panel .content {
+        padding: 14px 14px;
+      }
+      .related a {
+        display: block;
+        padding: 12px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        background: #fff;
+        text-decoration: none;
+        margin: 10px 0;
+      }
+      .related a:hover {
+        background: var(--panel);
+      }
+      .related .t {
+        font-weight: 800;
+        font-size: 13px;
+        line-height: 1.25;
+        margin-bottom: 6px;
+      }
+      .related .m {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .newsletter p {
+        margin: 0 0 10px;
+        color: #374151;
+        font-size: 13px;
+      }
+      .newsletter input {
+        width: 100%;
+        padding: 12px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        outline: none;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      .newsletter button {
+        width: 100%;
+        border: 1px solid rgba(204, 0, 0, 0.25);
+        background: linear-gradient(
+          135deg,
+          rgba(204, 0, 0, 0.1),
+          rgba(11, 94, 215, 0.1)
+        );
+        padding: 12px 12px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: 800;
+      }
+
+      /* Footer */
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 40px;
+        color: var(--muted);
+        font-size: 13px;
+        background: #fff;
+      }
+      .footer-inner {
+        display: flex;
+        gap: 14px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .links {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .links a {
+        text-decoration: none;
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: var(--panel);
+      }
+      .links a:hover {
+        background: var(--panel2);
+      }
+
+      /* Responsive */
+      @media (max-width: 980px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .side {
+          position: static;
+        }
+      }
+      @media (max-width: 760px) {
+        .nav {
+          display: none;
+        }
+        .search {
+          width: 160px;
+        }
+        .body {
+          grid-template-columns: 1fr;
+        }
+        .share {
+          position: static;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .share button {
+          flex: 1;
+          min-width: 140px;
+        }
+      }
+
+      /* Toast */
+      .toast {
+        position: fixed;
+        left: 50%;
+        bottom: 18px;
+        transform: translateX(-50%);
+        background: #111827;
+        color: #fff;
+        padding: 10px 12px;
+        border-radius: 12px;
+        font-size: 13px;
+        box-shadow: var(--shadow);
+        display: none;
+        z-index: 100;
+      }
+      .toast.show {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container top-inner">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="name">
+            <strong>The Global Ledger</strong>
+            <span>International Desk</span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a class="active" href="#">Investigations</a>
+          <a href="#">World</a>
+          <a href="#">Politics</a>
+          <a href="#">Security</a>
+          <a href="#">Opinion</a>
+        </nav>
+
+        <div class="tools">
+          <div class="search" role="search">
+            <span aria-hidden="true">⌕</span>
+            <input id="search" placeholder="Search…" />
+          </div>
+          <button class="btn primary" id="subscribeBtn">Subscribe</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="breaking">
+      <div class="container breaking-inner">
+        <span class="label">Breaking</span>
+        <div class="chips">
+          <span class="chip red">Southeast Asia</span>
+          <span class="chip blue">Jakarta Bureau</span>
+          <span class="chip">Case count: 10 confirmed</span>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="grid">
+        <!-- ARTICLE -->
+        <section class="article" aria-label="Article">
+          <div class="article-head">
+            <div class="kicker">
+              <span class="tag red">Investigations</span>
+              <span class="tag blue">Southeast Asia</span>
+              <span class="tag">Indonesia</span>
+            </div>
+
+            <h1>
+              Indonesia’s ‘Jaw Killer’: Is a Secret Military-Backed Experiment
+              Coming Back to Haunt the State?
+            </h1>
+
+            <p class="dek">
+              Indonesia’s escalating “Jaw Killer” case has taken a potentially
+              explosive turn following the death of a tenth victim early Sunday
+              morning — a former supervisor connected to a long-shuttered
+              research program known internally as HUM-EX.
+            </p>
+          </div>
+
+          <div class="meta">
+            <span><strong>By</strong> Daniel Mercer</span>
+            <span>Jakarta Bureau</span>
+            <span
+              >Published: <strong>February 22</strong> |
+              <strong>09:05 WIB</strong></span
+            >
+          </div>
+
+          <div class="body">
+            <aside class="share" aria-label="Share">
+              <button type="button" data-action="copy">🔗 Copy</button>
+              <button type="button" data-action="tweet">𝕏 Share</button>
+              <button type="button" data-action="mail">✉ Email</button>
+              <button type="button" data-action="print">🖨 Print</button>
+              <small>Share rail ala newsroom.</small>
+            </aside>
+
+            <article>
+              <p>
+                Authorities have confirmed the death. They have not confirmed
+                the program.
+              </p>
+              <p>They also have not denied it.</p>
+
+              <h2>Ten Dead, One Pattern</h2>
+              <p>
+                Since early this month, ten individuals have been killed in what
+                investigators describe as highly controlled attacks marked by
+                catastrophic neck trauma. No weapon has been recovered in any of
+                the cases. Forensic summaries leaked to Indonesian media suggest
+                the injuries are consistent with extreme compressive force
+                applied directly to the carotid artery.
+              </p>
+
+              <p>The victims were not random.</p>
+
+              <div class="box">
+                <strong>Of the ten confirmed dead:</strong>
+                <ul>
+                  <li>
+                    Four were former officials linked to controversial
+                    infrastructure contracts.
+                  </li>
+                  <li>
+                    Three were intermediaries in suspected illicit procurement
+                    networks.
+                  </li>
+                  <li>
+                    Two had prior connections to closed corruption
+                    investigations.
+                  </li>
+                  <li>
+                    The tenth, according to internal documentation reviewed by
+                    The Global Ledger, once held a supervisory position in
+                    HUM-EX.
+                  </li>
+                </ul>
+              </div>
+
+              <p>That connection has changed the temperature of the case.</p>
+
+              <h2>What Was HUM-EX?</h2>
+              <p>
+                Government spokespeople declined to elaborate when asked about
+                the acronym.
+              </p>
+              <p>
+                However, three independent sources — including one former civil
+                engineer and two retired defense consultants — describe HUM-EX
+                as a classified performance-enhancement research initiative
+                operating under a “dual-use security” framework more than a
+                decade ago.
+              </p>
+
+              <div class="quote">
+                <p class="q">
+                  “It wasn’t robotics. It wasn’t prosthetics. It was biological
+                  conditioning. Aggression tolerance. Physical reinforcement.
+                  You can interpret that how you want.”
+                </p>
+                <p class="by">
+                  Source close to the program, speaking anonymously due to legal
+                  risk
+                </p>
+              </div>
+
+              <p>Official documentation remains sealed.</p>
+
+              <h2>The Leaked Image</h2>
+              <p>
+                Hours before news of the tenth victim spread, a blurred
+                photograph surfaced on encrypted channels before reaching
+                mainstream Indonesian platforms. The image shows what appears to
+                be an underground concrete containment room fitted with
+                industrial chains and restraint hardware. No visible personnel
+                are present.
+              </p>
+              <p>
+                Government officials have dismissed the image as “unverified and
+                likely fabricated.”
+              </p>
+              <p>
+                Digital analysts contacted by The Global Ledger say the photo
+                does not show obvious signs of AI manipulation but could not
+                determine its origin. If authentic, it suggests infrastructure
+                designed for high-risk containment rather than ordinary
+                laboratory research.
+              </p>
+
+              <h2>A Selective Hunter</h2>
+              <p>
+                Unlike many serial offenders driven by impulse or notoriety, the
+                Jaw Killer appears methodical. Targets share institutional
+                history rather than demographic traits. Security analysts now
+                quietly ask a more uncomfortable question:
+                <strong
+                  >Is this a rogue predator — or a failed state asset
+                  eliminating witnesses?</strong
+                >
+              </p>
+              <p>
+                Dr. Martin Halvorsen, a Copenhagen-based conflict analyst, says
+                the pattern suggests grievance rather than chaos. “This is not
+                random terror,” Halvorsen said. “It looks like someone
+                revisiting a list.”
+              </p>
+
+              <h2>Political Risk</h2>
+              <p>
+                If HUM-EX is publicly confirmed as a state-backed human
+                conditioning experiment, the consequences could be severe.
+              </p>
+
+              <div class="box">
+                <strong>Indonesia faces:</strong>
+                <ul>
+                  <li>Possible parliamentary inquiries.</li>
+                  <li>International human rights scrutiny.</li>
+                  <li>Diplomatic pressure from Western partners.</li>
+                  <li>Domestic unrest fueled by distrust.</li>
+                </ul>
+              </div>
+
+              <p>
+                Already, Indonesian social media is saturated with hashtags
+                translating roughly to “Secret Project,” “Human Weapon,” and
+                “Predator Night.” The government insists the situation is
+                contained.
+              </p>
+
+              <div class="rule"></div>
+
+              <p
+                style="
+                  font-family: var(--serif);
+                  font-size: 18px;
+                  margin: 0 0 10px;
+                "
+              >
+                But the arithmetic is stark:
+              </p>
+              <p style="margin: 0 0 6px"><strong>Ten dead.</strong></p>
+              <p style="margin: 0 0 6px"><strong>No weapon.</strong></p>
+              <p style="margin: 0 0 14px">
+                <strong>A buried program resurfacing.</strong>
+              </p>
+
+              <p>And a killer who appears to know exactly who he is hunting.</p>
+              <p>
+                If HUM-EX was designed to create a weapon, Indonesia may now be
+                confronting the cost of losing control of it.
+              </p>
+
+              <div class="unknown">
+                <h3>WHAT REMAINS UNKNOWN</h3>
+                <ul>
+                  <li>Whether HUM-EX involved human subjects directly.</li>
+                  <li>
+                    Whether the tenth victim was still connected to classified
+                    research.
+                  </li>
+                  <li>Whether the killer is acting alone.</li>
+                  <li>
+                    Whether authorities know more than they are willing to
+                    disclose.
+                  </li>
+                </ul>
+              </div>
+
+              <p style="margin-top: 14px">
+                Until those questions are answered, the Jaw Killer story is no
+                longer just a criminal investigation. It is a test of
+                institutional transparency. And possibly, of national memory.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- SIDEBAR -->
+        <aside class="side" aria-label="Sidebar">
+          <section class="panel related">
+            <div class="head">More from Investigations</div>
+            <div class="content">
+              <a
+                href="#"
+                onclick="
+                  toast('Demo: open related story');
+                  return false;
+                "
+              >
+                <div class="t">
+                  Briefing: What investigators mean by “controlled” attacks
+                </div>
+                <div class="m">Forensics • 6 min read</div>
+              </a>
+              <a
+                href="#"
+                onclick="
+                  toast('Demo: open related story');
+                  return false;
+                "
+              >
+                <div class="t">
+                  Explainer: Dual-use research and state secrecy
+                </div>
+                <div class="m">Policy • 8 min read</div>
+              </a>
+              <a
+                href="#"
+                onclick="
+                  toast('Demo: open related story');
+                  return false;
+                "
+              >
+                <div class="t">
+                  Interview: Analysts on “selective violence” patterns
+                </div>
+                <div class="m">Security • 7 min read</div>
+              </a>
+            </div>
+          </section>
+
+          <section class="panel newsletter">
+            <div class="head">Newsletter</div>
+            <div class="content">
+              <p>Weekly investigations + updates. Straight to the point.</p>
+              <input id="email" type="email" placeholder="Email address" />
+              <button id="joinBtn" type="button">Join</button>
+              <p style="margin: 10px 0 0; color: var(--muted); font-size: 12px">
+                Unsubscribe anytime.
+              </p>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="head">Editors’ Note</div>
+            <div class="content" style="color: #374151; font-size: 13px">
+              Ini layout “news site” putih yang clean. Mau versi yang lebih
+              CNN-like lagi (dengan gambar hero, breadcrumb, dan “Latest” rail)?
+              Bilang aja:
+              <strong>“tambah gambar + breadcrumb + latest updates”</strong>.
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          © <span id="year"></span> The Global Ledger. All rights reserved.
+        </div>
+        <div class="links">
+          <a
+            href="#"
+            onclick="
+              toast('Demo: About');
+              return false;
+            "
+            >About</a
+          >
+          <a
+            href="#"
+            onclick="
+              toast('Demo: Ethics');
+              return false;
+            "
+            >Ethics</a
+          >
+          <a
+            href="#"
+            onclick="
+              toast('Demo: Corrections');
+              return false;
+            "
+            >Corrections</a
+          >
+          <a
+            href="#"
+            onclick="
+              toast('Demo: Contact');
+              return false;
+            "
+            >Contact</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      // Toast
+      const toastEl = document.getElementById("toast");
+      let timer = null;
+      function toast(msg) {
+        toastEl.textContent = msg;
+        toastEl.classList.add("show");
+        clearTimeout(timer);
+        timer = setTimeout(() => toastEl.classList.remove("show"), 2000);
+      }
+
+      // Year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Share rail
+      document.querySelectorAll(".share button").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const action = btn.dataset.action;
+          const url = window.location.href;
+
+          if (action === "copy") {
+            try {
+              await navigator.clipboard.writeText(url);
+              toast("Link copied ✅");
+            } catch {
+              toast("Clipboard blocked. Copy manually.");
+            }
+          }
+          if (action === "tweet") {
+            const text =
+              "Indonesia’s ‘Jaw Killer’: Is a Secret Military-Backed Experiment Coming Back to Haunt the State?";
+            window.open(
+              `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+              "_blank",
+              "noopener,noreferrer",
+            );
+          }
+          if (action === "mail") {
+            const subject = "The Global Ledger: Indonesia’s ‘Jaw Killer’";
+            const body = `Link:\n${url}`;
+            window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          }
+          if (action === "print") {
+            window.print();
+          }
+        });
+      });
+
+      // Newsletter (demo)
+      document.getElementById("joinBtn").addEventListener("click", () => {
+        const email = document.getElementById("email").value.trim();
+        if (!email) return toast("Enter your email ✉");
+        toast("Subscribed (demo) ✅");
+        document.getElementById("email").value = "";
+      });
+
+      // Search (demo)
+      document.getElementById("search").addEventListener("keydown", (e) => {
+        if (e.key === "Enter") toast(`Searching (demo): "${e.target.value}"`);
+      });
+
+      // Subscribe
+      document
+        .getElementById("subscribeBtn")
+        .addEventListener("click", () => toast("Subscribe flow (demo)"));
+    </script>
+  </body>
+</html>
